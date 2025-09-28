@@ -43,7 +43,11 @@ const App = () => {
 
   return (
     <>
-      {/* {!user ? <Login handleLogin={handleLogin} /> : ''} */}
+      {/* 🔴 ERROR: Login is commented out - users can't login! */}
+      {/* FIXED: Uncommented the login component */}
+      {!user ? <Login handleLogin={handleLogin} /> : null}
+      
+      {/* This part works fine, but only after user logs in */}
       {user == 'admin' ? <AdminDashboard changeUser={setUser} /> : (user == 'employee' ? <EmployeeDashboard changeUser={setUser} data={loggedInUserData} /> : null) }
     </>
   )

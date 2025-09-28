@@ -1,9 +1,12 @@
 import React from 'react'
 
-const FailedTask = () => {
+// 🔴 ERROR: Missing {data} prop in function parameter
+// FIXED: Added {data} prop
+const FailedTask = ({data}) => {
   return (
     <div className='flex-shrink-0 h-full w-[300px] p-5 bg-yellow-400 rounded-xl'>
             <div className='flex justify-between items-center'>
+                {/* 🔴 ERROR: data was undefined because prop was missing */}
                 <h3 className='bg-red-600 text-sm px-3 py-1 rounded'>{data.category}</h3>
                 <h4 className='text-sm'>{data.taskDate}</h4>
             </div>
