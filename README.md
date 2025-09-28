@@ -1,5 +1,15 @@
 # React + Vite
 
+Admin Login:
+
+Email: admin@me.com
+Password: 123
+
+Employee Login (from localStorage.jsx):
+
+Email: e@e.com (Arjun)
+Password: 123
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
